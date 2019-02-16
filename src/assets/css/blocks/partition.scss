@@ -1,18 +1,26 @@
 .ctf-partition {
   &-title {
-    text-align: center;
+    font-size: rem(36);
+    font-weight: 900;
+    margin-bottom: rem(22);
     color: $darken-purple;
 
-    & h2 {
-      color: inherit;
-      font-size: rem(36);
-      font-weight: 900;
-      margin-bottom: rem(22);
+    &-description {
+      margin-bottom: rem(45);
+      color: $purple-gray;
+      font-size: rem(18);
+      line-height: rem(30);
+      max-width: rem(800);
+
+      b {
+        font-weight: 900;
+        color: $darken-purple;
+      }
     }
   }
 
   &-marker {
-    position: relative; 
+    position: relative;
     display: block;
     padding-bottom: 40px !important;
     margin-bottom: rem(50) !important;
@@ -22,7 +30,7 @@
       width: 100px;
       height: 15px;
       border-radius: 5px;
-      background-color: $purple;
+      background-color: #ffd300;
       position: absolute;
       left: 0;
       bottom: 0;

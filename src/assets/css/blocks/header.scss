@@ -1,7 +1,7 @@
 .ctf-header {
   padding-top: rem(62);
   padding-bottom: rem(200);
-  background-color: #132548;
+  background-color: #22185b;
   background-image: linear-gradient(to bottom, #081123, #132548 80%, #22185b);
   color: $white;
   overflow: hidden;
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: .2;
+    opacity: 0.2;
     top: 0;
     left: 0;
   }
@@ -40,12 +40,11 @@
     }
   }
 
-  
   @media (max-width: $md-max-width) {
     &-image {
       margin: 0 -500px;
       text-align: center;
-  
+
       img {
         margin: -30px 0 -200px -30px;
       }
@@ -97,12 +96,11 @@
     font-weight: 900;
     color: $white;
     margin-bottom: rem(40);
-    
 
     @media (max-width: $md-max-width) {
       text-align: center;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       max-width: 90%;
     }
 
@@ -131,7 +129,7 @@
     @media (max-width: $md-max-width) {
       text-align: center;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       max-width: 80%;
     }
 
@@ -228,7 +226,7 @@
     @media (max-width: $md-max-width) {
       text-align: center;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       max-width: 80%;
     }
 

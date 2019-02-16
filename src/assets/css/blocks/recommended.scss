@@ -1,0 +1,44 @@
+.ctf-recommended {
+  margin-bottom: rem(80);
+
+  @media (max-width: $md-max-width) {
+    margin-bottom: 0;
+  }
+
+  &-item {
+    padding-left: 90px;
+    margin-bottom: rem(40);
+    position: relative;
+
+    ul {
+      list-style: none;
+      font-size: rem(16);
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  &-title {
+    font-weight: bold;
+    color: $darken-purple;
+    font-size: rem(21);
+    margin-bottom: rem(30);
+    display: block;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    svg {
+      width: rem(60);
+      height: rem(60);
+      fill: $purple;
+    }
+  }
+}
