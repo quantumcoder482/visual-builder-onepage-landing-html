@@ -1,0 +1,15 @@
+{
+  "name": "cleanui-landing",
+  "version": "1.0.0",
+  "authors": [
+    "Mediatec Software http://www.mediatec.org <hello@mediatec.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {
+    "jquery": "3.3.1",
+    "bootstrap": "4.3.0"
+  }
+}

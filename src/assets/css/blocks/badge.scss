@@ -1,0 +1,46 @@
+.ctf-badge {
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: $darken-purple;
+  color: $white;
+  border-radius: 5px;
+  font-size: rem(22);
+  line-height: initial;
+  font-weight: 900;
+  padding-left: rem(10);
+  padding-right: rem(10);
+  padding-top: rem(1);
+  padding-bottom: rem(1);
+  text-transform: uppercase;
+
+  &-small {
+    font-size: rem(10);
+    line-height: rem(19);
+    font-weight: 400;
+    border-radius: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: rem(7);
+    padding-right: rem(7);
+  }
+
+  &-purple-gray {
+    color: $purple-gray;
+    background-color: $lighten-gray;
+  }
+
+  &-gray {
+    background-color: rgba($darken-purple, 0.11);
+    font-size: rem(18);
+  }
+
+  &-dark-gray {
+    color: $white;
+    background-color: $gray;
+  }
+
+  &-medium {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+}

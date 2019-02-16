@@ -1,0 +1,142 @@
+.ctf-reviews {
+  margin-bottom: rem(90);
+
+  &-title {
+    margin-bottom: rem(40);
+  }
+
+  &-title-note {
+    margin-bottom: rem(50);
+  }
+
+  &-header {
+    margin-bottom: rem(60);
+  }
+
+  &-clients-badge-container {
+    text-align: center;
+    margin-top: rem(33);
+  }
+
+  &-clients-badge {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+    background-color: $lighten-gray;
+    color: $purple-gray;
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(19);
+    line-height: rem(29);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: rem(18);
+    padding-bottom: rem(10);
+    padding-left: rem(25);
+    padding-right: rem(25);
+  }
+
+  &-clients-count {
+    display: block;
+    font-weight: 900;
+    font-size: rem(36);
+    line-height: rem(36);
+    margin-bottom: rem(-3);
+  }
+
+  &-item {
+    background-color: $white;
+    border: 1px solid $lighten-gray;
+    border-radius: 5px;
+    padding-top: rem(29);
+    padding-left: rem(37);
+    padding-right: rem(42);
+    padding-bottom: rem(30);
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s ease-in;
+
+    @media screen and (max-width: $md-max-width) {
+      margin-bottom: rem(40);
+      padding-top: rem(20);
+      padding-left: rem(32);
+      padding-right: rem(37);
+      padding-bottom: rem(20);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: $purple;
+      transform: translate3d(calc(-100% - 1px), 0, 0);
+      transition: transform 0.2s ease-in;
+      will-change: transform;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      &::before {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .ctf-reviews-item-author {
+        color: $white;
+      }
+
+      .ctf-reviews-item-rating {
+        background-image: url('../img/5-stars-inverse.png');
+      }
+    }
+  }
+
+  &-item-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-item-source {
+    font-size: rem(16);
+    font-style: italic;
+    margin-bottom: rem(28);
+  }
+
+  &-item-author {
+    display: block;
+    font-size: rem(24);
+    line-height: rem(36);
+    margin-bottom: rem(5);
+    font-weight: 400;
+    font-style: normal;
+    color: $black;
+    transition: color 0.2s ease-in;
+  }
+
+  &-item-rating {
+    width: 161px;
+    height: 25px;
+    margin-bottom: rem(36);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    background-image: url('../img/5-stars.png');
+    will-change: filter;
+  }
+
+  &-item-quote {
+    font-size: rem(16);
+    line-height: rem(24);
+    letter-spacing: 0.5px;
+  }
+
+  &-item-punch {
+    display: block;
+    font-weight: 700;
+    margin-top: rem(25);
+  }
+}

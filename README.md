@@ -7,6 +7,11 @@
 * Run the app `yarn start`
 * For build production files use `yarn build` (build to /build/ folder)
 
+Additional commands:
+
+* `yarn clean` clean dist folder
+* `yarn prettier` run prettier
+* `yarn stylelint` run stylelint
 
 ### Support ###
 

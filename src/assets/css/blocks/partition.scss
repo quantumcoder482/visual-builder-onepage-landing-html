@@ -1,0 +1,46 @@
+.ctf-partition {
+  &-title {
+    text-align: center;
+    color: $darken-purple;
+
+    & h2 {
+      color: inherit;
+      font-size: rem(36);
+      font-weight: 900;
+      margin-bottom: rem(22);
+    }
+  }
+
+  &-title-note {
+    text-align: center;
+    color: $purple-gray-2;
+
+    p {
+      font-size: rem(18);
+      line-height: rem(24);
+    }
+  }
+
+  &-content-inner-wrapper {
+    background-color: #f0f2f6;
+    padding: rem(15);
+    border-radius: 5px;
+  }
+
+  &-content-wrapper {
+    background-color: rgba($lighten-gray-5, 0.9);
+    padding-left: rem(50);
+    padding-right: rem(50);
+    padding-top: rem(60);
+    padding-bottom: rem(40);
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media (max-width: $sm-max-width) {
+      padding-left: rem(20);
+      padding-right: rem(20);
+      padding-top: rem(30);
+      padding-bottom: rem(30);
+    }
+  }
+}

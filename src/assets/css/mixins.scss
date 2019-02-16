@@ -1,0 +1,49 @@
+$white: #fff;
+$black: #000;
+
+$black-dark-blue: #090f25;
+$black-dark-blue-2: #101624;
+$gray: #cdd2e2;
+$lighten-gray: #e8f0f1;
+$lighten-gray-2: #f2f5fa;
+$lighten-gray-3: #eeeff3;
+$lighten-gray-4: #f0f2f6;
+$lighten-gray-5: #f6f7fa;
+$lighten-gray-6: #fefefe;
+$lighten-gray-7: #fbfbfd;
+$lighten-gray-8: #f5f7fa;
+$lighten-gray-9: #e5e7ed;
+
+$light-gray: #d0d2d9;
+
+$purple-gray: #5c6689;
+$purple-gray-2: #676788;
+$dark-purple: #6051cc;
+$darken-purple: #161635;
+$purple: #6555dc;
+$light-purple: #7c70e1;
+
+$lighten-green: #e8f0f1;
+$green: #17c383;
+
+$base-font-family: 'Nunito Sans', -apple-systewm, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+$base-font-size: 14 !default;
+
+$container-fluid-max-width: 1270px; // container  + paddings 30px
+
+$xxl-min-width: 1600px;
+$xxl-max-width: 1599px;
+$xl-min-width: 1200px;
+$xl-max-width: 1199px;
+$md-min-width: 992px;
+$md-max-width: 991px;
+$sm-min-width: 768px;
+$sm-max-width: 767px;
+$xs-min-width: 544px;
+$xs-max-width: 543px;
+
+@function rem($px, $base: $base-font-size) {
+  @return #{$px/$base}rem;
+}
