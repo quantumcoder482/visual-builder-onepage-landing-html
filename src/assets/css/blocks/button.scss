@@ -17,6 +17,7 @@
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   margin: rem(10) 0;
+  outline: none !important;
 
   &:hover,
   &:focus {
@@ -54,6 +55,19 @@
       &:hover {
         border-color: $light-purple;
       }
+    }
+  }
+
+  &-green {
+    color: $white;
+    background-color: $green;
+    font-weight: 700;
+    border: 2px solid $green;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($green, 5%);
+      color: $white;
     }
   }
 

@@ -11,6 +11,31 @@
     }
   }
 
+  &-marker {
+    position: relative; 
+    display: block;
+    padding-bottom: 40px !important;
+    margin-bottom: rem(50) !important;
+    &::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 15px;
+      border-radius: 5px;
+      background-color: $purple;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    &-center {
+      &::after {
+        left: 50%;
+        margin-left: -50px;
+      }
+    }
+  }
+
   &-title-note {
     text-align: center;
     color: $purple-gray-2;

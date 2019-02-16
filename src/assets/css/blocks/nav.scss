@@ -269,7 +269,6 @@
     color: $purple-gray;
     font-weight: 400;
     transition: color 0.2s ease-in;
-    margin-left: rem(-26);
 
     &:hover,
     &:focus {
@@ -291,19 +290,6 @@
       }
     }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      margin-right: rem(10);
-      background-repeat: no-repeat;
-      background-position: top left;
-      background-size: contain;
-      width: rem(16);
-      height: rem(16);
-      position: relative;
-      bottom: rem(-1);
-    }
-
     @media screen and (max-width: $sm-max-width) {
       margin-left: rem(15);
       font-size: rem(21);
@@ -313,41 +299,6 @@
 
     @media screen and (max-width: $xs-max-width) {
       margin-left: rem(8);
-    }
-
-    &-html {
-      &::before {
-        background-image: url(../img/logos/WS-logo-short.png);
-      }
-    }
-
-    &-react {
-      &::before {
-        background-image: url(../img/logos/AT-logo-short.png);
-      }
-    }
-
-    &-vue {
-      &::before {
-        background-image: url(../img/logos/MP-logo-short.png);
-        margin-right: rem(6);
-        left: rem(1);
-      }
-    }
-
-    &-ng {
-      &::before {
-        background-image: url(../img/logos/ET-logo-short.png);
-        margin-right: rem(6);
-      }
-    }
-
-    &-ws {
-      &::before {
-        background-image: url(../img/logos/CS-logo-short.png);
-        height: rem(14);
-        left: rem(1);
-      }
     }
   }
 
