@@ -1,1 +1,27 @@
 @import "../assets/mixins";
+
+.op__list {
+  background: $pastel-1;
+  border-radius: 10px;
+  padding: rem(70) rem(80) rem(60);
+
+  &__title {
+    display: block;
+    margin: rem(20) 0;
+    font-weight: bold;
+    position: relative;
+    padding-left: rem(30);
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: rem(17);
+      height: rem(17);
+      background: $primary;
+      border-radius: 20px;
+    }
+  }
+}
