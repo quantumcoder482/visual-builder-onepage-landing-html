@@ -1,5 +1,72 @@
-<div class="op__block">
-  <div class="container-fluid">
-    [carousel]
+<div class="op__carousel">
+  <div class="op__block">
+    <div class="container-fluid">
+      <div class="op__carousel__slider owl-carousel">
+        <div class="op__carousel__item">
+          190
+          <span>components</span>
+        </div>
+        <div class="op__carousel__item">
+          99+
+          <span>widgets</span>
+        </div>
+        <div class="op__carousel__item">
+          60+
+          <span>pages</span>
+        </div>
+        <div class="op__carousel__item">
+          17+
+          <span>apps</span>
+        </div>
+        <div class="op__carousel__item">
+          02
+          <span>ui kits</span>
+        </div>
+        <div class="op__carousel__item">
+          7k+
+          <span>clients</span>
+        </div>
+        <div class="op__carousel__item">
+          ∞
+          <span>theming</span>
+        </div>
+        <div class="op__carousel__item">
+          06
+          <span>products</span>
+        </div>
+        <div class="op__carousel__item">
+          20+
+          <span>settings</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function () {
+    $('.op__carousel__slider').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        560: {
+          items: 3,
+        },
+        660: {
+          items: 4,
+        },
+        820: {
+          items: 5,
+        },
+        1100: {
+          items: 6,
+        },
+      }
+    })
+  })
+</script>

@@ -10,7 +10,7 @@
 
   &__inner {
     display: flex;
-    padding: rem(60) rem(20) rem(20);
+    padding: rem(60) rem(20) rem(30);
     justify-content: space-between;
   
     @media (max-width: $md-max-width) {

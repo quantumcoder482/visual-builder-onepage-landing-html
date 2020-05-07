@@ -1,1 +1,68 @@
 @import "../assets/mixins";
+
+.op__carousel {
+  .op__block {
+    max-width: rem(1280);
+  }
+
+  &__slider {
+    position: relative;
+    z-index: 1;
+
+    &:before,
+    &:after {
+      pointer-events: none;
+      position: absolute;
+      z-index: 3;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 20%;
+      background: $white;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    &:after {
+      left: auto;
+      right: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+  }
+
+  &__item {
+    display: block;
+    width: rem(165);
+    height: rem(130);
+    background: $pastel-1;
+    border-radius: 10px;
+    margin: 0 auto;
+    user-select: none;
+    @include transition-middle();
+    padding: rem(20) rem(30);
+    font-size: rem(60);
+    font-weight: bold;
+    line-height: 50px;
+    line-height: 1.1;
+  
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+
+    span {
+      display: block;
+      font-size: rem(18);
+      font-weight: normal;
+    }
+  }
+}
