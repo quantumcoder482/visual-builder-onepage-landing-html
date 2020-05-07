@@ -1,0 +1,11 @@
+@import "../assets/mixins";
+
+.op__promo {
+  padding: rem(40) 0;
+  color: $white;
+
+  &__outer {
+    background: $black;
+    min-height: rem(500);
+  }
+}

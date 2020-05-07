@@ -1,0 +1,37 @@
+@import "../mixins";
+
+.text-small {
+  font-size: 80%;
+}
+
+.text {
+  &-text {
+    color: $text !important;
+  }
+  &-muted {
+    color: $gray-5 !important;
+  }
+}
+
+.table-hover {
+  tr:hover {
+    td {
+      background: $pastel-1;
+    }
+  }
+}
+
+.font-size {
+  &-18 {
+    font-size: rem(18);
+  }
+  &-21 {
+    font-size: rem(21);
+  }
+  &-24 {
+    font-size: rem(24);
+  }
+  &-32 {
+    font-size: rem(32);
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "clean-ui-onepage-landing",
+  "version": "1.0.0",
+  "authors": [
+    "Mediatec Software http://www.mediatec.org <hello@mediatec.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "owl.carousel": "2.3.4"
+  },
+  "resolutions": {
+    "d3": "^5.8.0",
+    "chartist": "^0.11.0"
+  }
+}
