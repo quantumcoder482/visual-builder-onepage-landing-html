@@ -1,1 +1,96 @@
 @import "../assets/mixins";
+
+.op__footer {
+  padding-top: rem(65);
+  padding-bottom: rem(40);
+  font-weight: 400;
+  border-top: 1px solid $border;
+  font-size: rem(16);
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    @media screen and (max-width: $sm-max-width) {
+      flex-direction: column;
+    }
+  }
+  
+  &__logo {
+    font-size: rem(24);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 900;
+    @include transition-slow();
+  
+    &:hover {
+      span {
+        background: $primary;
+      }
+    }
+  
+    span {
+      display: inline-block;
+      height: rem(18);
+      width: rem(18);
+      background: $black;
+      border-radius: 20px;
+      margin-left: rem(10);
+      vertical-align: middle;
+      position: relative;
+      top: -3px;
+      @include transition-slow();
+    }
+  }
+  
+  &__contactsWrapper {
+    @media screen and (max-width: $sm-max-width) {
+      order: -1;
+      margin-bottom: rem(20);
+    }
+  }
+  
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    text-align: right;
+  
+    @media screen and (max-width: $sm-max-width) {
+      text-align: left;
+      flex-direction: column;
+    }
+  }
+  
+  &__contactsItem {
+    margin-left: auto;
+    margin-bottom: rem(8);
+  
+    @media screen and (max-width: $sm-max-width) {
+      margin-left: 0;
+      margin-right: rem(30);
+    }
+  }
+  
+  &__rating {
+    text-align: right;
+  
+    @media screen and (max-width: $sm-max-width) {
+      text-align: left;
+    }
+  }
+  
+  &__ratingStars {
+    height: 20px;
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    background: repeat-x url(/components/assets/img/stars.png) left top;
+    background-size: contain;
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+  }
+}
+
