@@ -1,1 +1,39 @@
 @import "../assets/mixins";
+
+.op__unlock {
+  background: $black;
+  color: $white;
+  text-align: center;
+  margin-bottom: rem(110);
+
+  h1 {
+    font-size: rem(64);
+    font-weight: bold;
+    margin-bottom: rem(30);
+  }
+
+  p {
+    margin-bottom: rem(50);
+  }
+
+  .op__block {
+    margin-bottom: 0;
+  }
+
+  .op__btn {
+    padding-left: rem(70);
+    padding-right: rem(70);
+  }
+
+  &__container {
+    padding: rem(80) 0 rem(100);
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: rem(10) rem(30);
+    background: #15244A;
+    border-radius: 10px;
+    margin: 0 20px;
+  }
+}
