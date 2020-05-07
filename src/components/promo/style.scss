@@ -3,13 +3,9 @@
 .op__promo {
   background: $black;
   min-height: rem(500);
-  padding: rem(20) 0 rem(80);
+  padding: 0 0 rem(80);
   overflow: hidden;
   color: $white;
-
-  @media (max-width: $md-max-width) {
-    padding-top: 0;
-  }
 
   .op__block {
     margin-bottom: 0;
@@ -23,7 +19,9 @@
     }
 
     h1 {
-      margin: rem(30) 0 rem(50);
+      margin: rem(60) 0 rem(50);
+      font-size: rem(48);
+      line-height: 1.1;
 
       @media (max-width: $lg-max-width) {
         br {
@@ -64,16 +62,38 @@
     &__icon {
       display: inline-block;
       width: rem(40);
+      height: rem(40);
       text-align: center;
-      margin-right: rem(10);
+      margin-right: rem(20);
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
       img {
-        max-height: rem(30);
+        max-height: rem(40);
+        vertical-align: top;
+      }
+
+      &--html {
+        border-radius: 100px;
+        background: $white;
+
+        img {
+          max-height: rem(30);
+        }
+      }
+
+      &--sketch {
+        img {
+          max-height: rem(35);
+        }
       }
     }
   }
 
   &__img {
-    min-height: rem(600);
+    min-height: rem(660);
     position: relative;
 
     @media (max-width: $md-max-width) {
