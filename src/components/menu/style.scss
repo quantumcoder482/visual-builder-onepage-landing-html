@@ -2,15 +2,13 @@
 
 
 .op__menu {
-  display: flex;
+  background: $black;
 
-  @media (max-width: $md-max-width) {
-    margin-bottom: rem(20);
-    flex-wrap: wrap;
-    padding-right: rem(70);
+  .op__block {
+    margin-bottom: 0;
   }
 
-  &__container {
+  &__inner {
     display: flex;
     padding: rem(60) rem(20) rem(20);
     justify-content: space-between;
@@ -20,27 +18,30 @@
       // align-items: center;
     }
   }
-  &__outer {
-    background: $black;
 
-    .op__block {
-      margin-bottom: 0;
-    }
-  }
+  &__links {
+    display: flex;
 
-  &__link {
-    display: block;
-    margin-right: rem(30);
-    border-radius: 50px;
-    @include transition-middle;
-    color: $white;
-  
-    &:last-child {
-      margin-right: 0;
+    @media (max-width: $md-max-width) {
+      margin-bottom: rem(20);
+      flex-wrap: wrap;
+      padding-right: rem(70);
     }
 
-    &:hover, &:active, &:focus {
-      color: $gray-2;
+    a {
+      display: block;
+      margin-right: rem(30);
+      border-radius: 50px;
+      @include transition-middle;
+      color: $white;
+    
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover, &:active, &:focus {
+        color: $gray-2;
+      }
     }
   }
 

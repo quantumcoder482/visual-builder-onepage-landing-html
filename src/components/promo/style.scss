@@ -1,11 +1,90 @@
 @import "../assets/mixins";
 
 .op__promo {
-  padding: rem(40) 0;
+  background: $black;
+  min-height: rem(500);
+  padding: rem(20) 0 rem(80);
+  overflow: hidden;
   color: $white;
 
-  &__outer {
-    background: $black;
-    min-height: rem(500);
+  @media (max-width: $md-max-width) {
+    padding-top: 0;
+  }
+
+  .op__block {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    padding-top: rem(40);
+
+    @media (max-width: $md-max-width) {
+      padding-top: rem(20);
+    }
+
+    h1 {
+      margin: rem(30) 0 rem(50);
+
+      @media (max-width: $lg-max-width) {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__notification {
+    padding: rem(13);
+    background: $dark-gray-5;
+    font-family: 'Courier', Courier, monospace;
+    font-size: 90%;
+    text-align: center;
+    border-radius: 8px;
+
+    a {
+      color: $gray-5;
+
+      &:hover, &:active, &:focus {
+        color: lighten($gray-5, 10%);
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: rem(7);
+    }
+
+    &__icon {
+      display: inline-block;
+      width: rem(40);
+      text-align: center;
+      margin-right: rem(10);
+      img {
+        max-height: rem(30);
+      }
+    }
+  }
+
+  &__img {
+    min-height: rem(600);
+    position: relative;
+
+    @media (max-width: $md-max-width) {
+      margin-top: rem(80);
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-height: 100%;
+    }
   }
 }
