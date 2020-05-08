@@ -1,1 +1,34 @@
 @import "../assets/mixins";
+
+.op__reviews {
+  &__item {
+    background: $pastel-1;
+    padding: rem(50) rem(40) rem(35);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+      background: $pastel-2;
+    }
+
+    @media (max-width: $md-max-width) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: rem(21);
+  }
+
+  &__company {
+    margin-bottom: rem(16);
+  }
+
+  &__stars {
+    margin-bottom: rem(16);
+    font-size: rem(24);
+    color: $primary;
+  }
+}
