@@ -1,6 +1,11 @@
 @import "../mixins";
 
 .op {
+  &__descr {
+    max-width: rem(700);
+    margin: 0 auto;
+  }
+
   &__link {
     color: $primary;
 

@@ -1,1 +1,23 @@
 @import "../assets/mixins";
+
+.op__rec {
+  &__item {
+    padding-left: rem(72);
+    position: relative;
+    padding-top: rem(20);
+  }
+  &__icon {
+    font-size: rem(54);
+    color: $success;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: $md-max-width) {
+    &__item {
+      padding-left: 0;
+      padding-top: rem(100);
+    }
+  }
+}
