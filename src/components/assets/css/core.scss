@@ -36,6 +36,9 @@ input {
 
 button,
 input {
-  box-shadow: none !important;
   outline: none !important;
+}
+
+button {
+  box-shadow: none !important;
 }

@@ -1,1 +1,54 @@
 @import "../assets/mixins";
+
+.op__table {
+  white-space: nowrap;
+  overflow-x: auto;
+  
+  table {
+    border: none;
+
+    td {
+      width: 25%;
+      border: none;
+      border-right: 1px solid $border;
+      text-align: center;
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+
+      &:first-child {
+        text-align: left;
+        padding-left: rem(30);
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid $border;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .fe {
+      color: $primary;
+      font-size: rem(24);
+      height: 1px;
+      display: block;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &__section {
+    td {
+      background: $gray-1;
+      color: $gray-5;
+      letter-spacing: 3px;
+      font-size: rem(13);
+      text-transform: uppercase;
+    }
+  }
+}

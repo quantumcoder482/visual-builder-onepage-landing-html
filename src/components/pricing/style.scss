@@ -16,6 +16,11 @@
     p {
       margin-bottom: rem(40);
     }
+
+    @media (max-width: $lg-max-width) {
+      max-width: rem(600);
+      margin: 0 auto rem(40);
+    }
   }
 
   &__price {
