@@ -97,6 +97,7 @@
   &__img {
     min-height: rem(660);
     position: relative;
+    user-select: none;
 
     @media (max-width: $md-max-width) {
       margin-top: rem(80);

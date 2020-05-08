@@ -94,3 +94,21 @@
   }
 }
 
+// dark theme
+[data-kit-theme="dark"] {
+  .op__footer {
+    border-top: 1px solid $black;
+
+    &__logo {
+      span {
+        background: $dark-gray-2;
+      }
+
+      &:hover {
+        span {
+          background: $primary;
+        }
+      }
+    }
+  }
+}

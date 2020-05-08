@@ -52,3 +52,21 @@
     }
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__table {
+    table {
+      color: $dark-gray-2;
+    }
+    td, tr {
+      border-color: $black;
+    }
+
+    &__section {
+      td {
+        background: $black;
+      }
+    }
+  }
+}

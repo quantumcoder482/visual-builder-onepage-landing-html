@@ -43,7 +43,7 @@
     display: inline-block;
     padding: 0 rem(30);
     font-size: rem(21);
-    color: $white;
+    color: $white !important;
     background: $success;
     height: rem(47);
     line-height: rem(48) !important;
@@ -56,42 +56,42 @@
     &:focus,
     &:active {
       background: lighten($success, 5%);
-      color: $white;
+      color: $white !important;
     }
 
     &--light {
-      color: $primary;
+      color: $primary !important;
       background: $pastel-1;
 
       &:hover,
       &:focus,
       &:active {
         background: darken($pastel-1, 3%);
-        color: $primary;
+        color: $primary !important;
       }
     }
 
     &--blue {
-      color: $white;
+      color: $white !important;
       background: $primary;
 
       &:hover,
       &:focus,
       &:active {
         background: lighten($primary, 3%);
-        color: $white;
+        color: $white !important;
       }
     }
 
     &--lightDark {
-      color: $black;
+      color: $black !important;
       background: $pastel-1;
 
       &:hover,
       &:focus,
       &:active {
         background: darken($pastel-1, 3%);
-        color: $black;
+        color: $black !important;
       }
     }
 

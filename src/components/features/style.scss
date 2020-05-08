@@ -35,3 +35,12 @@
     }
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__features {
+    &__icon {
+      background: $black;
+    }
+  }
+}

@@ -29,3 +29,10 @@
     }
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__list {
+    background: $black;
+  }
+}

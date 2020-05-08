@@ -32,3 +32,13 @@
     margin-bottom: rem(40);
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__pricing {
+    &__item {
+      background: $black;
+      border-color: $black;
+    }
+  }
+}

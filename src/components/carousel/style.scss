@@ -66,3 +66,29 @@
     }
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__carousel {
+    &__slider {
+      &:before {
+        background: linear-gradient(
+          -90deg,
+          rgba(lighten($black,3%),0%),
+          rgba(lighten($black,3%),100%)
+        );
+      }
+      &:after {
+        background: linear-gradient(
+          90deg,
+          rgba(lighten($black,3%),0%),
+          rgba(lighten($black,3%),100%)
+        );
+      }
+    }
+
+    &__item {
+      background: $black;
+    }
+  }
+}

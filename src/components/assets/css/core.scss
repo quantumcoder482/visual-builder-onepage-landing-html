@@ -42,3 +42,23 @@ input {
 button {
   box-shadow: none !important;
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  body {
+    background: lighten($dark, 3%);
+    color: $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary;
+    @include transition-color();
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}

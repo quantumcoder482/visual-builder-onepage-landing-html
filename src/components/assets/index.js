@@ -1,3 +1,10 @@
 $(document).ready(function () {
-  console.log(123)
+  $(document).dblclick(function () {
+    var attr = $('html').attr('data-kit-theme')
+    if (attr === 'dark') {
+      $('html').attr('data-kit-theme', '')
+    } else {
+      $('html').attr('data-kit-theme', 'dark')
+    }
+  })
 })

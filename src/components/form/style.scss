@@ -131,3 +131,30 @@
     }
   }
 }
+
+// dark theme
+[data-kit-theme="dark"] {
+  .op__form {
+    background: $black;
+
+    input, textarea {
+      background: lighten($black, 3%);
+      border-color: lighten($black, 3%);
+
+      &:hover, &:focus, &:active {
+        border-color: $primary;
+      }
+    }
+
+    &__fig {
+      &3 {
+        border-color: lighten($black, 10%);
+      }
+      &5 {
+        span {
+          background: lighten($black, 10%);
+        }
+      }
+    }
+  }
+}
