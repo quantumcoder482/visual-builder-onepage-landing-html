@@ -1,4 +1,10 @@
 $(function () {
+  // init AOS animations
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  })
+
   // dblclick change theme
   $(document).dblclick(function () {
     var attr = $('html').attr('data-kit-theme')
