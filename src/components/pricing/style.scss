@@ -1,1 +1,29 @@
 @import "../assets/mixins";
+
+.op__pricing {
+  &__item {
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: rem(60) rem(50) rem(70);
+    text-align: center;
+
+    h4 {
+      font-weight: bold;
+      font-size: rem(24);
+      margin-bottom: rem(40);
+    } 
+
+    p {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__price {
+    font-size: rem(24);
+  }
+
+  &__prices {
+    line-height: 1.2;
+    margin-bottom: rem(40);
+  }
+}

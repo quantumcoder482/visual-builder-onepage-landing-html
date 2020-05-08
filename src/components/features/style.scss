@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: $md-max-width) {
+    justify-content: space-around;
+  }
+
   &__item {
     width: rem(130);
     margin-bottom: rem(40);

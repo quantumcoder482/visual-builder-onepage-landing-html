@@ -5,6 +5,10 @@
   border-radius: 10px;
   padding: rem(70) rem(80) rem(60);
 
+  @media (max-width: $md-max-width) {
+    padding: rem(70) rem(40) rem(60);
+  }
+
   &__title {
     display: block;
     margin: rem(20) 0;
