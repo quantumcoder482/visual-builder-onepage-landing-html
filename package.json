@@ -1,8 +1,8 @@
 {
-  "name": "project",
+  "name": "cleanui-onepage-landing-html",
   "version": "1.0.0",
   "author": "Mediatec Software http://www.mediatec.org <hello@mediatec.com>",
-  "description": "Clean UI Pro Html Admin Template",
+  "description": "Clean UI Onepage Landing",
   "private": true,
   "scripts": {
     "start": "gulp",
