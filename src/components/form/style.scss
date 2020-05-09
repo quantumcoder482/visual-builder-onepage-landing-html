@@ -138,8 +138,8 @@
     background: $black;
 
     input, textarea {
-      background: lighten($black, 3%);
-      border-color: lighten($black, 3%);
+      background: lighten($black, 10%);
+      border-color: lighten($black, 10%);
 
       &:hover, &:focus, &:active {
         border-color: $primary;
