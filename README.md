@@ -1,5 +1,10 @@
-### Quick Start ###
+### Clean UI Onepage Landing Html Template Preview ###
+https://landing.cleanuitemplate.com
 
+### Documentation ###
+Please read documentation here https://docs.cleanuitemplate.com
+
+### Quick Start ###
 * Install node.js: https://nodejs.org​
 * Install yarn package manager: https://yarnpkg.com/​
 * Install bower and gulp `yarn global add bower gulp`
@@ -7,6 +12,5 @@
 * Install third-party plugins `yarn setup`
 * Run the app (build task) `yarn start`
 
-### Documentation ###
-
-Please read documentation here https://docs.cleanuitemplate.com
+### Support ###
+Use GitHub Issues for tracking bugs and creating new feature requests or write to [support@sellpixels.com](mailto:support@sellpixels.com).
