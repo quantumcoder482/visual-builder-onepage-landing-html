@@ -1,9 +1,7 @@
 @import "../assets/mixins";
 
 .op__footer {
-  padding-top: rem(65);
-  padding-bottom: rem(40);
-  font-weight: 400;
+  padding: rem(50) 0 rem(70);
   border-top: 1px solid $border;
   font-size: rem(16);
 
@@ -18,58 +16,75 @@
   }
   
   &__logo {
-    font-size: rem(24);
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-weight: 900;
-    @include transition-slow();
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: rem(30);
+    white-space: nowrap;
+    width: 100%;
+    font-weight: bold;
+    color: $dark;
   
-    &:hover {
-      span {
-        background: $primary;
+    svg {
+      height: rem(36);
+      width: rem(36);
+      position: relative;
+      top: -1px;
+      margin-right: rem(10);
+  
+      path:nth-child(1) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+      }
+      path:nth-child(2) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+        animation-delay: 2s;
+      }
+      path:nth-child(3) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+        animation-delay: 4s;
+      }
+  
+      @keyframes logoAnimate {
+        0% {
+          stroke: $primary;
+          fill: $primary;
+        }
+        50% {
+          stroke: #1ad697;
+          fill: #1ad697;
+        }
+        100% {
+          stroke: $primary;
+          fill: $primary;
+        }
       }
     }
   
-    span {
-      display: inline-block;
-      height: rem(18);
-      width: rem(18);
-      background: $black;
-      border-radius: 20px;
-      margin-left: rem(10);
-      vertical-align: middle;
-      position: relative;
-      top: -3px;
-      @include transition-slow();
+    &__name {
+      font-size: rem(18);
+      font-weight: 700;
+      color: $black;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 90%;
+      display: block;
     }
   }
   
-  &__contactsWrapper {
+  &__ratingWrapper {
     @media screen and (max-width: $sm-max-width) {
-      order: -1;
-      margin-bottom: rem(20);
-    }
-  }
-  
-  &__contacts {
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    text-align: right;
-  
-    @media screen and (max-width: $sm-max-width) {
-      text-align: left;
-      flex-direction: column;
-    }
-  }
-  
-  &__contactsItem {
-    margin-left: auto;
-    margin-bottom: rem(8);
-  
-    @media screen and (max-width: $sm-max-width) {
-      margin-left: 0;
-      margin-right: rem(30);
+      order: 1;
+      margin-top: rem(20);
     }
   }
   
@@ -97,7 +112,7 @@
 // dark theme
 [data-kit-theme="dark"] {
   .op__footer {
-    border-top: 1px solid $black;
+    border-top: 1px solid $dark-gray-4;
 
     &__logo {
       span {

@@ -8,8 +8,8 @@
 // CONFIGURATION
 
 var appVars = {
-  "templateName": "Clean UI Onepage Landing",
-  "title": "Clean UI Onepage Landing",
+  "templateName": "Visual Builder Onepage Landing",
+  "title": "Visual Builder Onepage Landing",
   "version": "1.0.0",
   "description": "",
 };

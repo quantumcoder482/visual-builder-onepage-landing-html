@@ -1,8 +1,8 @@
-### Clean UI Onepage Landing Html Template Preview ###
-https://landing.cleanuitemplate.com
+### Visual Builder Onepage Landing Html Template Preview ###
+https://landing.visualbuilder.cloud
 
 ### Documentation ###
-Please read documentation here https://docs.cleanuitemplate.com
+Please read documentation here https://docs.visualbuilder.cloud
 
 ### Quick Start ###
 * Install node.js: https://nodejs.org​

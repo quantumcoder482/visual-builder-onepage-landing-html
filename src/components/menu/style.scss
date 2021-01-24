@@ -93,6 +93,7 @@
       max-width: 90%;
       display: block;
     }
+
     &__descr {
       margin-left: rem(20);
       padding-left: rem(20);
@@ -100,6 +101,50 @@
       line-height: rem(41);
       border-left: 1px solid $dark-gray-3;
       color: $gray-5;
+    }
+
+    svg {
+      height: rem(36);
+      width: rem(36);
+      position: relative;
+      top: -1px;
+      margin-right: rem(10);
+
+      path:nth-child(1) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+      }
+      path:nth-child(2) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+        animation-delay: 2s;
+      }
+      path:nth-child(3) {
+        stroke: $primary;
+        fill: $primary;
+        stroke-width: 1px;
+        animation: logoAnimate 6s ease-in-out infinite;
+        animation-delay: 4s;
+      }
+
+      @keyframes logoAnimate {
+        0% {
+          stroke: $primary;
+          fill: $primary;
+        }
+        50% {
+          stroke: #1ad697;
+          fill: #1ad697;
+        }
+        100% {
+          stroke: $primary;
+          fill: $primary;
+        }
+      }
     }
   }
 }
